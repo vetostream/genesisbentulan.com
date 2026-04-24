@@ -1,6 +1,6 @@
 (() => {
   const nav = document.getElementById("nav");
-  const navLinks = document.querySelectorAll(".nav-links a[data-nav]");
+  const navLinks = document.querySelectorAll("[data-nav]");
   const sections = ["home", "about", "stack", "work", "contact"]
     .map((id) => ({ id, el: document.getElementById(id) }))
     .filter((s) => s.el);
@@ -19,6 +19,29 @@
   };
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
+
+  const burger = document.getElementById("nav-burger");
+  const menu = document.getElementById("mobile-menu");
+  const setMenu = (open) => {
+    if (!burger || !menu) return;
+    burger.classList.toggle("open", open);
+    menu.classList.toggle("open", open);
+    document.body.classList.toggle("menu-open", open);
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+    burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    menu.setAttribute("aria-hidden", open ? "false" : "true");
+  };
+  if (burger && menu) {
+    burger.addEventListener("click", () => {
+      setMenu(!menu.classList.contains("open"));
+    });
+    menu.querySelectorAll("a[href^='#']").forEach((a) => {
+      a.addEventListener("click", () => setMenu(false));
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && menu.classList.contains("open")) setMenu(false);
+    });
+  }
 
   document.querySelectorAll('a[href^="#"]').forEach((a) => {
     a.addEventListener("click", (e) => {
