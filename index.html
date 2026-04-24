@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Genesis Bentulan · Full-Stack Developer</title>
+  <meta name="description" content="Genesis Bentulan is a full-stack developer based in Cebu, Philippines building end-to-end web products with React, Node, Postgres, and AWS."/>
+  <meta name="theme-color" content="#0a0a0a"/>
+  <meta property="og:title" content="Genesis Bentulan · Full-Stack Developer"/>
+  <meta property="og:description" content="End-to-end web products. A decade of shipping software for startups that need to move fast without leaving a mess behind."/>
+  <meta property="og:type" content="website"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <!-- ─────── NAV ─────── -->
+  <nav class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <div class="brand">
+        <div class="brand-mark">GB</div>
+        <div class="brand-name">
+          <strong>Genesis Bentulan</strong> <span>· <span data-year></span></span>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#home" data-nav="home"><span class="hash">/00</span>Index</a>
+        <a href="#about" data-nav="about"><span class="hash">/01</span>About</a>
+        <a href="#stack" data-nav="stack"><span class="hash">/02</span>Stack</a>
+        <a href="#work" data-nav="work"><span class="hash">/03</span>Work</a>
+        <a href="#contact" data-nav="contact"><span class="hash">/04</span>Contact</a>
+      </div>
+      <div class="nav-right">
+        <div class="status-pill"><span class="status-dot"></span>Available</div>
+        <button class="nav-burger" aria-label="Menu">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+            <path d="M4 7h16M4 12h16M4 17h10"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─────── HERO ─────── -->
+  <section id="home" class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <div><strong>LAT</strong> 10.3157° N · <strong>LNG</strong> 123.8854° E</div>
+        <div class="center">PORTFOLIO · <span data-year></span></div>
+        <div class="right">LOCAL <strong data-clock>00:00:00</strong></div>
+      </div>
+
+      <div class="hero-grid">
+        <div>
+          <h1 class="hero-title">
+            <span class="l1">Full-stack</span>
+            <span class="l2">developer<span class="slash">/</span></span>
+            <span class="l3">builder<span class="mark"></span></span>
+          </h1>
+        </div>
+        <div class="hero-side">
+          <div class="hero-photo">
+            <div class="hero-photo-inner">
+              <img src="assets/headshot.png" alt="Genesis Bentulan"/>
+            </div>
+          </div>
+          <div class="hero-id">
+            <div class="row"><span>ID</span><strong>Genesis.Bentulan</strong></div>
+            <div class="row"><span>ROLE</span><strong>Full-Stack Developer</strong></div>
+            <div class="row"><span>STATUS</span><span class="ok">● ONLINE</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-tag-row">
+        <div class="lead">
+          I build <strong>end-to-end web products</strong>: the interface, the API, the data layer,
+          and the boring glue between them. A decade of shipping software for startups that needed
+          to move fast without leaving a mess behind. I <strong>ramp quickly on unfamiliar stacks</strong>,
+          plug into teams with minimal overhead, and tend to be the person who gets handed the tangled
+          codebase, to refactor it or migrate it off entirely.
+        </div>
+        <div class="micro">
+          <strong>01 · Focus</strong>
+          Web apps<br/>
+          API architecture<br/>
+          Stack modernization<br/>
+          CI/CD pipelines<br/>
+          Technical rescue
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#contact">Start a project <span class="arr">↗</span></a>
+        <a class="btn btn-ghost" href="#work">See work <span class="arr">↓</span></a>
+        <a class="btn btn-ghost" href="mailto:genesisbentulan@gmail.com">Email <span class="arr">↗</span></a>
+      </div>
+    </div>
+
+    <div class="ticker">
+      <div class="ticker-track">
+        <span>Python · Django</span><span class="dot"></span>
+        <span>React · React Native</span><span class="dot"></span>
+        <span>Vue · Nuxt</span><span class="dot"></span>
+        <span>Node · TypeScript</span><span class="dot"></span>
+        <span>Postgres · MySQL</span><span class="dot"></span>
+        <span>GraphQL · Redis</span><span class="dot"></span>
+        <span>AWS · Docker</span><span class="dot"></span>
+        <span>JavaScript · Tailwind</span><span class="dot"></span>
+        <span>Python · Django</span><span class="dot"></span>
+        <span>React · React Native</span><span class="dot"></span>
+        <span>Vue · Nuxt</span><span class="dot"></span>
+        <span>Node · TypeScript</span><span class="dot"></span>
+        <span>Postgres · MySQL</span><span class="dot"></span>
+        <span>GraphQL · Redis</span><span class="dot"></span>
+        <span>AWS · Docker</span><span class="dot"></span>
+        <span>JavaScript · Tailwind</span><span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────── ABOUT ─────── -->
+  <section id="about" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-meta">
+          <span class="n">// 01</span>
+          <span>ABOUT / BIO</span>
+        </div>
+        <h2>
+          An engineer who <span class="slash">/</span> <span class="dim">cares about</span><br/>
+          the <span class="slash">/</span> seams.
+        </h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            I'm <strong>Genesis</strong>, a full-stack developer who's happiest bridging a crisp
+            interface with the <span class="accent">systems behind it</span>.
+          </p>
+          <p>
+            I started on the frontend, chasing pixels, then followed the data down into databases,
+            queues, and infra because I got tired of handing off specs and hoping. Today I build
+            product end-to-end, <strong>ramp fast on unfamiliar stacks</strong>, and work best with
+            small teams that don't have time to hand-hold.
+          </p>
+          <p>
+            A lot of my work is <strong>refactoring and modernization</strong>: inheriting a tangled
+            codebase, untangling it in public, and when it's worth it, migrating it to a stack that can
+            carry the next year of growth. Upgrades, CI/CD pipelines that actually ship, and the
+            unglamorous glue nobody else wants to touch.
+          </p>
+        </div>
+
+        <div class="spec-grid">
+          <div class="spec-cell">
+            <div class="l">Experience</div>
+            <div class="v big">10<span class="unit">yr</span></div>
+            <div class="sub">in the stack</div>
+          </div>
+          <div class="spec-cell">
+            <div class="l">Based in</div>
+            <div class="v">Cebu, PH</div>
+            <div class="sub">Remote worldwide</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────── CAPABILITIES ─────── -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-meta">
+          <span class="n">// 02</span>
+          <span>SERVICES / CAPABILITIES</span>
+        </div>
+        <h2>
+          What I <span class="slash">/</span> do,<br/>
+          <span class="dim">end-to-end.</span>
+        </h2>
+      </div>
+      <div class="cap-grid">
+        <div class="cap-card">
+          <div class="cap-arr">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+          <div class="cap-num">[SVC.01]</div>
+          <h3 class="cap-h">End-to-end product</h3>
+          <p class="cap-d">From empty repo to production. React on the front, Node + Postgres behind it, CI/CD that actually passes.</p>
+          <div class="cap-stack">
+            <span class="cap-tag">React</span>
+            <span class="cap-tag">React Native</span>
+            <span class="cap-tag">Vue</span>
+            <span class="cap-tag">Nuxt</span>
+            <span class="cap-tag">Node</span>
+            <span class="cap-tag">Docker</span>
+            <span class="cap-tag">AWS</span>
+          </div>
+        </div>
+        <div class="cap-card">
+          <div class="cap-arr">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+          <div class="cap-num">[SVC.02]</div>
+          <h3 class="cap-h">API &amp; data layer</h3>
+          <p class="cap-d">REST and GraphQL APIs, schemas that age well, query patterns that don't fold at scale.</p>
+          <div class="cap-stack">
+            <span class="cap-tag">Python</span>
+            <span class="cap-tag">Django</span>
+            <span class="cap-tag">GraphQL</span>
+            <span class="cap-tag">Postgres</span>
+            <span class="cap-tag">MySQL</span>
+            <span class="cap-tag">Redis</span>
+          </div>
+        </div>
+        <div class="cap-card">
+          <div class="cap-arr">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </div>
+          <div class="cap-num">[SVC.03]</div>
+          <h3 class="cap-h">Rescue &amp; refactor</h3>
+          <p class="cap-d">Inherit a gnarly codebase. Untangle it in public. Hand it back faster, safer, easier to ship on.</p>
+          <div class="cap-stack">
+            <span class="cap-tag">Audit</span>
+            <span class="cap-tag">Perf</span>
+            <span class="cap-tag">DX</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────── STACK ─────── -->
+  <section id="stack" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-meta">
+          <span class="n">// 03</span>
+          <span>TECH / TOOLBOX</span>
+        </div>
+        <h2>
+          The stack I <span class="slash">/</span><br/>
+          reach for <span class="dim">daily.</span>
+        </h2>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-col">
+          <h3>Frontend <span class="count">[ 06 ]</span></h3>
+          <div class="stack-item"><span class="n">01</span><span class="name">JavaScript</span></div>
+          <div class="stack-item"><span class="n">02</span><span class="name">React</span></div>
+          <div class="stack-item"><span class="n">03</span><span class="name">TypeScript</span></div>
+          <div class="stack-item"><span class="n">04</span><span class="name">Tailwind</span></div>
+          <div class="stack-item"><span class="n">05</span><span class="name">React Native / Expo</span></div>
+          <div class="stack-item"><span class="n">06</span><span class="name">Vue / Nuxt</span></div>
+        </div>
+        <div class="stack-col">
+          <h3>Backend &amp; infra <span class="count">[ 08 ]</span></h3>
+          <div class="stack-item"><span class="n">01</span><span class="name">Python</span></div>
+          <div class="stack-item"><span class="n">02</span><span class="name">Django</span></div>
+          <div class="stack-item"><span class="n">03</span><span class="name">Node.js</span></div>
+          <div class="stack-item"><span class="n">04</span><span class="name">PostgreSQL</span></div>
+          <div class="stack-item"><span class="n">05</span><span class="name">GraphQL / REST</span></div>
+          <div class="stack-item"><span class="n">06</span><span class="name">MySQL</span></div>
+          <div class="stack-item"><span class="n">07</span><span class="name">Redis</span></div>
+          <div class="stack-item"><span class="n">08</span><span class="name">AWS / Docker</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────── WORK ─────── -->
+  <section id="work" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-meta">
+          <span class="n">// 04</span>
+          <span>WORK / INDEX</span>
+        </div>
+        <h2>
+          Selected <span class="slash">/</span> work,<br/>
+          <span class="dim">2017 to 2026.</span>
+        </h2>
+      </div>
+
+      <div class="proj-list" id="proj-list">
+        <div class="proj-group-head">
+          <span class="n">// CONTRACT</span>
+          <span class="c">[ 08 ]</span>
+        </div>
+        <a class="proj-row" href="https://www.alfred.com/" target="_blank" rel="noopener noreferrer" data-name="Alfred" data-spec="MUSIC.ECOMMERCE">
+          <span class="proj-n">//01</span>
+          <div class="proj-name">Alfred <span class="proj-spec">MUSIC.ECOMMERCE</span></div>
+          <div class="proj-desc"><strong>FULL-STACK · CONTRIBUTOR</strong>Sheet music, method books, and learning resources for musicians at every level.</div>
+          <div class="proj-year"><strong>2017</strong>PRESENT</div>
+          <span class="open-icon">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+        <a class="proj-row" href="https://www.dentalmenu.com/" target="_blank" rel="noopener noreferrer" data-name="Dental Menu" data-spec="DENTAL.MEMBERSHIP">
+          <span class="proj-n">//02</span>
+          <div class="proj-name">Dental Menu <span class="proj-spec">DENTAL.MEMBERSHIP</span></div>
+          <div class="proj-desc"><strong>FULL-STACK · CONTRIBUTOR</strong>Lets dental practices offer custom membership plans directly to their uninsured patients.</div>
+          <div class="proj-year"><strong>2022</strong>PRESENT</div>
+          <span class="open-icon">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+        <a class="proj-row" href="https://htacertified.org/" target="_blank" rel="noopener noreferrer" data-name="HTA Certified" data-spec="CERT.DIRECTORY">
+          <span class="proj-n">//03</span>
+          <div class="proj-name">HTA Certified <span class="proj-spec">CERT.DIRECTORY</span></div>
+          <div class="proj-desc"><strong>FULL-STACK · CONTRIBUTOR</strong>Connects homeowners and builders with vetted, certified smart-home technology integrators.</div>
+          <div class="proj-year"><strong>2022</strong>PRESENT</div>
+          <span class="open-icon">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+        <a class="proj-row" href="https://www.womanstats.org/" target="_blank" rel="noopener noreferrer" data-name="WomanStats" data-spec="DATA.RESEARCH">
+          <span class="proj-n">//04</span>
+          <div class="proj-name">WomanStats <span class="proj-spec">DATA.RESEARCH</span></div>
+          <div class="proj-desc"><strong>FULL-STACK · CONTRIBUTOR</strong>Crossnational database of statistics on the status of women across 176 countries.</div>
+          <div class="proj-year"><strong>2017</strong>PRESENT</div>
+          <span class="open-icon">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+        <a class="proj-row" href="https://www.ubwest.com/" target="_blank" rel="noopener noreferrer" data-name="UB West" data-spec="UTILITIES.BILLING">
+          <span class="proj-n">//05</span>
+          <div class="proj-name">UB West <span class="proj-spec">UTILITIES.BILLING</span></div>
+          <div class="proj-desc"><strong>FULL-STACK · CONTRIBUTOR</strong>Utility billing and submetering for multifamily properties: bills, reports, and support.</div>
+          <div class="proj-year"><strong>2017</strong>PRESENT</div>
+          <span class="open-icon">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+        <a class="proj-row" href="https://www.lytho.com/product/planner/" target="_blank" rel="noopener noreferrer" data-name="Lytho Planner" data-spec="MARKETING.PLANNING">
+          <span class="proj-n">//06</span>
+          <div class="proj-name">Lytho Planner <span class="proj-spec">MARKETING.PLANNING</span></div>
+          <div class="proj-desc"><strong>FULL-STACK · CONTRIBUTOR</strong>Formerly DivvyHQ. Shared content calendar for marketing teams to plan campaigns and track deadlines.</div>
+          <div class="proj-year"><strong>2018</strong>PRESENT</div>
+          <span class="open-icon">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+        <a class="proj-row" href="https://kaduceus.com/" target="_blank" rel="noopener noreferrer" data-name="Kaduceus" data-spec="EDUCATION.CTE">
+          <span class="proj-n">//07</span>
+          <div class="proj-name">Kaduceus <span class="proj-spec">EDUCATION.CTE</span></div>
+          <div class="proj-desc"><strong>FULL-STACK · CONTRIBUTOR</strong>Health-science career training curriculum and certification programs for US high schools.</div>
+          <div class="proj-year"><strong>2018</strong>PRESENT</div>
+          <span class="open-icon">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+        <a class="proj-row" href="https://www.colorcode.com/" target="_blank" rel="noopener noreferrer" data-name="Color Code" data-spec="PERSONALITY.ASSESSMENT">
+          <span class="proj-n">//08</span>
+          <div class="proj-name">Color Code <span class="proj-spec">PERSONALITY.ASSESSMENT</span></div>
+          <div class="proj-desc"><strong>FULL-STACK · CONTRIBUTOR</strong>Color-based personality assessment that reveals motivations and improves team and relationship dynamics.</div>
+          <div class="proj-year"><strong>2018</strong>PRESENT</div>
+          <span class="open-icon">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+
+        <div class="proj-group-head">
+          <span class="n">// PERSONAL &amp; PARTNERSHIP</span>
+          <span class="c">[ 06 ]</span>
+        </div>
+        <a class="proj-row" href="https://www.negosyouph.com/" target="_blank" rel="noopener noreferrer" data-name="negosYOU PH" data-spec="COMMERCE.INVENTORY">
+          <span class="proj-n">//09</span>
+          <div class="proj-name">negosYOU PH <span class="proj-spec">COMMERCE.INVENTORY</span></div>
+          <div class="proj-desc"><strong>FULL-STACK · CO-FOUNDER · MAIN CONTRIBUTOR</strong>Mobile app for Filipino sari-sari stores to manage inventory, sales, and expenses.</div>
+          <div class="proj-year"><strong>2025</strong>PRESENT</div>
+          <span class="open-icon">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+        <div class="proj-row" data-name="Autobai" data-spec="AUTO.MARKETPLACE">
+          <span class="proj-n">//10</span>
+          <div class="proj-name">Autobai <span class="proj-spec">AUTO.MARKETPLACE</span></div>
+          <div class="proj-desc"><strong>CO-FOUNDER · FULL-STACK · MAIN CONTRIBUTOR</strong>Philippines second-hand car marketplace with dealer storefronts, rich filters, and per-shop search.</div>
+          <div class="proj-year"><strong>2023–2025</strong>ARCHIVED</div>
+          <span class="open-icon">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </span>
+        </div>
+        <div class="proj-row" data-name="Warefusion" data-spec="LOGISTICS.WMS">
+          <span class="proj-n">//11</span>
+          <div class="proj-name">Warefusion <span class="proj-spec">LOGISTICS.WMS</span></div>
+          <div class="proj-desc"><strong>FULL-STACK · SOLE DEVELOPER · MAIN CONTRIBUTOR</strong>3PL warehouse management system covering inventory tracking, per-customer fee billing, invoicing, and exports.</div>
+          <div class="proj-year"><strong>2024</strong>PRESENT</div>
+          <span class="open-icon">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </span>
+        </div>
+        <div class="proj-row" data-name="Varefusio" data-spec="INVENTORY.OMS">
+          <span class="proj-n">//12</span>
+          <div class="proj-name">Varefusio <span class="proj-spec">INVENTORY.OMS</span></div>
+          <div class="proj-desc"><strong>FULL-STACK · SOLE DEVELOPER · MAIN CONTRIBUTOR</strong>Inventory and order management for businesses: purchasing, sales, deliveries, and stock tracking.</div>
+          <div class="proj-year"><strong>2025</strong>PRESENT</div>
+          <span class="open-icon">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </span>
+        </div>
+        <div class="proj-row" data-name="Citrax" data-spec="CALL.ANALYTICS">
+          <span class="proj-n">//13</span>
+          <div class="proj-name">Citrax <span class="proj-spec">CALL.ANALYTICS</span></div>
+          <div class="proj-desc"><strong>FULL-STACK · MAIN CONTRIBUTOR</strong>Call tracking for a towing company, monitoring agent call handling and conversion to dispatched jobs.</div>
+          <div class="proj-year"><strong>2022–2024</strong>ARCHIVED</div>
+          <span class="open-icon">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </span>
+        </div>
+        <div class="proj-row" data-name="Dahon" data-spec="GARDEN.MOBILE">
+          <span class="proj-n">//14</span>
+          <div class="proj-name">Dahon <span class="proj-spec">GARDEN.MOBILE</span></div>
+          <div class="proj-desc"><strong>FULL-STACK · SOLE DEVELOPER · FOUNDER</strong>A quiet plant-care companion. Catalog plants, log care gently, and keep your garden close.</div>
+          <div class="proj-year"><strong>2026</strong>BUILDING</div>
+          <span class="open-icon">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </span>
+        </div>
+      </div>
+
+      <div class="proj-preview" id="proj-preview" aria-hidden="true">
+        <div class="proj-preview-inner">
+          <div class="proj-preview-name" id="proj-preview-name"></div>
+          <div class="proj-preview-spec" id="proj-preview-spec"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────── PROCESS ─────── -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-meta">
+          <span class="n">// 05</span>
+          <span>METHOD / PROCESS</span>
+        </div>
+        <h2>
+          How I <span class="slash">/</span><br/>
+          actually <span class="dim">ship.</span>
+        </h2>
+      </div>
+      <div class="proc-grid">
+        <div class="proc-step">
+          <div class="n">STEP.01</div>
+          <h4>Discover</h4>
+          <p>Understand the business, constraints, and the real user. Write the brief before the code.</p>
+        </div>
+        <div class="proc-step">
+          <div class="n">STEP.02</div>
+          <h4>Prototype</h4>
+          <p>Sketch, mock, ship a rough working slice end-to-end before polishing anything.</p>
+        </div>
+        <div class="proc-step">
+          <div class="n">STEP.03</div>
+          <h4>Build</h4>
+          <p>Iterate in short loops. Ship every week. Test the parts that will hurt if they break.</p>
+        </div>
+        <div class="proc-step">
+          <div class="n">STEP.04</div>
+          <h4>Handoff</h4>
+          <p>Docs, runbooks, and a team that can carry it without me. No hero dependencies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────── CONTACT ─────── -->
+  <section id="contact" class="contact-section">
+    <div class="wrap">
+      <div class="section-meta" style="margin-bottom:40px;flex-direction:row;gap:14px">
+        <span class="n">// 06</span>
+        <span>CONTACT / START</span>
+      </div>
+      <h2 class="contact-huge">
+        <span class="l1">Got a project?</span>
+        <span class="l2">Let's <span class="accent">build</span>.</span>
+      </h2>
+      <div class="contact-row">
+        <a class="contact-email" href="mailto:genesisbentulan@gmail.com">
+          genesisbentulan@gmail.com <span class="arr">↗</span>
+        </a>
+        <div class="contact-meta">
+          <div class="cell">
+            <div class="l">Response</div>
+            <div class="v">~ 48 hours</div>
+          </div>
+          <div class="cell">
+            <div class="l">Based in</div>
+            <div class="v">Cebu · remote</div>
+          </div>
+          <div class="cell">
+            <div class="l">Elsewhere</div>
+            <div class="v">
+              <a href="https://github.com/vetostream" target="_blank" rel="noopener">GitHub</a> ·
+              <a href="https://www.linkedin.com/in/genesis-dwight-bentulan-1955b2122/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────── FOOTER ─────── -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="footer-left">
+        <span>© <span data-year></span></span>
+        <span>Genesis Bentulan</span>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/vetostream" target="_blank" rel="noopener" aria-label="GitHub">GH ↗</a>
+        <a href="https://www.linkedin.com/in/genesis-dwight-bentulan-1955b2122/" target="_blank" rel="noopener" aria-label="LinkedIn">LI ↗</a>
+        <a href="#home" id="back-to-top">BACK TO TOP ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
